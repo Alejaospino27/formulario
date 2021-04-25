@@ -6,147 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    
+    <main id=main>
 
-    <div class="container">
-        <header class="header">
-            <h1 id="title" class="text-center"> Formulario evaluación de ventas</h1>
-            <p id="description">Gracias por tomarte el tiempo en responder una encuenta sobre tu compra en nuestra
-                tienda</p>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center"> Formulario evaluación de ventas</h1>
+                <p id="description">Gracias por tomarte el tiempo en responder una encuenta sobre tu compra en nuestra
+                    tienda</p>
 
-        </header>
+            </header>
 
-        <form id="survey-form">
+            <form id="survey-form">
 
-            <div class="formatos">
-                <label id=name-label for="nombre">NOMBRE</label>
-                <input id="nombre" type="text" placeholder="Ingrese su nombre" name="nombre" required>
-            </div>
+                <div class="formatos">
+                    <label id=name-label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" placeholder="Ingrese su nombre" name="nombre" required>
+                </div>
 
-            <div class="formatos">
-                <label id=email-label for="correo">CORREO ELECTRONICO</label>
-                <input id="correo" type="email" placeholder="Ingrese su correo electronico" name="correo" required>
-            </div>
-
-
-            <div class="formatos">
-                <label id=number-label for="numero">CONTACTO</label>
-                <input id="numero" type="number" placeholder="Ingrese numero contacto" name="numero" required
-                    minlength="7" maxlength="10">
-            </div>
+                <div class="formatos">
+                    <label id=email-label for="correo">Correo electronico</label>
+                    <input id="correo" type="email" placeholder="Ingrese su correo electronico" name="correo" required>
+                </div>
 
 
-            <div class="formatos">
-                <p>Escoge una de las opciones del tipo de compra que realizaste</p>
-                <select name="compra" id="compra" class="form-control" required>
-                    <option disabled selected value>Seleccione una opción</option>
-                    <option value="facial">Cuidado facil</option>
-                    <option value="capilar">Cuidado capilar</option>
-                    <option value="makeup">Maquillaje</option>
-                    <option value="otro">Otro</option>
-
-                </select>
-            </div>
-
-            <div class="formatos">
-
-                <p> Sientes que el servicio que ofrece la tienda es:</p>
-                <label>
-                    <input name="servicio" value="excelente" type="radio" class="input-radio" checked>Excelente
-                </label>
+                <div class="formatos">
+                    <label id=number-label for="numero">Número de productos comprados</label>
+                    <input id="numero" type="number" placeholder="Ingrese numero contacto" name="numero" required
+                        min="1">
+                </div>
 
 
-                <label>
-                    <input name="servicio" value="bueno" type="radio" class="input-radio" checked>Bueno
-                </label>
+                <div class="formatos">
+                    <p>Escoge una de las opciones del tipo de compra que realizaste</p>
+                    <select name="compra" id="compra" class="form-control" required>
+                        <option disabled selected value>Seleccione una opción</option>
+                        <option value="facial">Cuidado facil</option>
+                        <option value="capilar">Cuidado capilar</option>
+                        <option value="makeup">Maquillaje</option>
+                        <option value="otro">Otro</option>
+
+                    </select>
+                </div>
+
+                <div class="formatos">
+
+                    <p> Sientes que el servicio que ofrece la tienda es:</p>
+                    <label>
+                        <input name="servicio" value="excelente" type="radio" class="input-radio" checked>Excelente
+                    </label>
 
 
-                <label>
-                    <input name="servicio" value="regular" type="radio" class="input-radio" checked>Regular
-                </label>
+                    <label>
+                        <input name="servicio" value="bueno" type="radio" class="input-radio" checked>Bueno
+                    </label>
 
 
-                <label>
-                    <input name="servicio" value="malo" type="radio" class="input-radio" checked>Malo
-                </label>
-
-            </div>
-
-            <div class="formatos">
-                <p>
-                    Cuales son los productos que frecuentemente compras en nuestra tienda
-                    <span class="clue">(Selecciona una o varias)</span>
-                </p>
-
-                <label>
-                    <input name="capilar" value="capilar" type="checkbox" class="input-checkbox" />Cuidado
-                    capilar
-                </label>
+                    <label>
+                        <input name="servicio" value="regular" type="radio" class="input-radio" checked>Regular
+                    </label>
 
 
-                <label>
-                    <input name="facial" value="facial" type="checkbox" class="input-checkbox" />
-                    Cuidado facial
-                </label>
+                    <label>
+                        <input name="servicio" value="malo" type="radio" class="input-radio" checked>Malo
+                    </label>
+
+                </div>
+
+                <div class="formatos">
+                    <p>
+                        Cuales son los productos que frecuentemente compras en nuestra tienda
+                        <span class="clue">(Selecciona una o varias)</span>
+                    </p>
+
+                    <label>
+                        <input name="capilar" value="capilar" type="checkbox" class="input-checkbox" />Cuidado
+                        capilar
+                    </label>
 
 
-                <label>
-                    <input name="makeup" value="makeup" type="checkbox" class="input-checkbox" />
-                    Maquillaje
-                </label>
+                    <label>
+                        <input name="facial" value="facial" type="checkbox" class="input-checkbox" />
+                        Cuidado facial
+                    </label>
 
 
-                <label><input name="otro" value="otros" type="checkbox" class="input-checkbox">
-                    Otros
-                </label>
-
-                <label>
-                    <input name="na" value="na" type="checkbox" class="input-checkbox">
-                    Primera vez comprando en la tienda
-                </label>
-
-            </div>
-
-            <div class="formatos">
-                <p>Basado en tu experiencia, ¿volverias a comprar en la página?</p>
-                <label>
-                    <input name="cliente" value="sí" type="radio" class="input-radio" checked />Sí</label>
-                <label>
-                    <input name="cliente" value="no" type="radio" class="input-radio" />No</label>
-
-            </div>
+                    <label>
+                        <input name="makeup" value="makeup" type="checkbox" class="input-checkbox" />
+                        Maquillaje
+                    </label>
 
 
-            <div class="formatos">
-                <p>Tienes alguna sugerencia o felicitación a nuestro equipo</p>
-                <textarea
-                  id="comentarios"
-                  class="input-textarea"
-                  name="comment"
-                  placeholder="Ingresa tu comentario aquí..."
-                ></textarea>
-              </div>
-          
-              <div class="formatos">
-                <button type="submit" id="submit" class="submit-button">
-                  Submit
-                </button>
-            </div>
+                    <label><input name="otro" value="otros" type="checkbox" class="input-checkbox">
+                        Otros
+                    </label>
+
+                    <label>
+                        <input name="na" value="na" type="checkbox" class="input-checkbox">
+                        Primera vez comprando en la tienda
+                    </label>
+
+                </div>
+
+                <div class="formatos">
+                    <p>Basado en tu experiencia, ¿volverias a comprar en la página?</p>
+                    <label>
+                        <input name="cliente" value="sí" type="radio" class="input-radio" checked />Sí</label>
+                    <label>
+                        <input name="cliente" value="no" type="radio" class="input-radio" />No</label>
+
+                </div>
+
+
+                <div class="formatos">
+                    <p>Tienes alguna sugerencia o felicitación a nuestro equipo</p>
+                    <textarea id="comentarios" class="input-textarea" name="comment"
+                        placeholder="Ingresa tu comentario aquí..." rows="flex" cols="flex"></textarea>
+                </div>
+
+                <div class="formatos">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
 
 
 
 
 
-        </form>
+            </form>
 
 
 
 
 
 
-    </div>
+        </div>
+    </main>
 
 </body>
 
